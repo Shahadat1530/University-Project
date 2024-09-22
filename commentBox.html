@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <!-- Tailwind Framework Link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #f39c12;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+
+<body class="poppins">
+    <header class="bg-gray-200">
+        <nav class="max-w-screen-2xl mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <details>
+                                    <summary>Schools</summary>
+                                    <ul class="p-2">
+                                        <li><a href="sse.html">SSE</a></li>
+                                        <li><a href="ciubs.html">CIUBS</a></li>
+                                        <li><a href="slass.html">SLASS</a></li>
+                                        <li><a href="sol.html">SOL</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a href="faculty.html">Faculty</a></li>
+                            <li><a href="commentBox.html">Comment Box</a></li>
+                            <li><a href="forum.php">Forum</a></li>
+                            <li><a href="logout.php">Logout</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-3xl">Chittagong Independent University</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <details>
+                                <summary>Schools</summary>
+                                <ul class="p-2">
+                                    <li><a href="sse.html">SSE</a></li>
+                                    <li><a href="ciubs.html">CIUBS</a></li>
+                                    <li><a href="slass.html">SLASS</a></li>
+                                    <li><a href="sol.html">SOL</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="commentBox.html">Comment Box</a></li>
+                        <li><a href="forum.php">Forum</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img alt="" src="images/logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="Form text-center p-5 w-full bg-slate-100 my-12">
+        <h2 class="text-4xl font-bold">Comment Box</h2>
+        <form action="connect.php" method="post" class="space-y-4 mx-auto w-2/5">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <input type="text" name="student_id" placeholder="Your Student ID" required><br>
+            <select name="faculty">
+                <option value="-1" selected>Select Faculty Member</option>
+                <option value="Dr Rubell Sen Goopta">Dr Rubell Sen Goopta</option>
+                <option value="Risul Islam Rasel">Risul Islam Rasel</option>
+                <option value="Dr Aseef Iqbal">Dr Aseef Iqbal</option>
+                <option value="Atiqur Rahman">Atiqur Rahman</option>
+                <option value="Md. Sajjatul Islam">Md. Sajjatul Islam</option>
+                <option value="Samia Muntaha">Samia Muntaha</option>
+            </select>
+            <textarea name="message" placeholder="Your Message or Complaint" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</body>
+
+</html>

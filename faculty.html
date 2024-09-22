@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Members</title>
+    <!-- Tailwind Framework Link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="poppins">
+    <header class="bg-gray-200">
+        <nav class="max-w-screen-2xl mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <details>
+                                    <summary>Schools</summary>
+                                    <ul class="p-2">
+                                        <li><a href="sse.html">SSE</a></li>
+                                        <li><a href="ciubs.html">CIUBS</a></li>
+                                        <li><a href="slass.html">SLASS</a></li>
+                                        <li><a href="sol.html">SOL</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a href="faculty.html">Faculty</a></li>
+                            <li><a href="commentBox.html">Comment Box</a></li>
+                            <li><a href="forum.php">Forum</a></li>
+                            <li><a href="logout.php">Logout</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-3xl">Chittagong Independent University</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <details>
+                                <summary>Schools</summary>
+                                <ul class="p-2">
+                                    <li><a href="sse.html">SSE</a></li>
+                                    <li><a href="ciubs.html">CIUBS</a></li>
+                                    <li><a href="slass.html">SLASS</a></li>
+                                    <li><a href="sol.html">SOL</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="commentBox.html">Comment Box</a></li>
+                        <li><a href="forum.php">Forum</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img alt="" src="images/logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="text-5xl font-bold text-center py-4">Faculty of SSE</h2>
+
+        <!-- Faculty Member 1 -->
+        <section class="flex flex-wrap items-center bg-orange-200 p-4">
+            <div class="w-full lg:w-1/2 p-4">
+                <h1 class="text-xl font-bold">Dr Rubell Sen Goopta</h1>
+                <p>Dean, School of Science & Engineering(SSE)<br>
+                    Associate Professor <br>
+                    Head, Dept. of EEE <br>
+                    Phone: +880-622946, 636484 <br>
+                    Mail: rubellsen@ciu.edu.bd <br>
+                    Room-No: 2303
+                </p>
+            </div>
+            <div class="w-full lg:w-1/2 p-4">
+                <img src="Images/Rubell_Sir.jpg" alt="Dr Rubell Sen Goopta" class="w-1/2 mx-auto">
+            </div>
+        </section>
+
+        <!-- Faculty Member 2 -->
+        <section class="flex flex-wrap items-center bg-yellow-100 p-4">
+            <div class="w-full lg:w-1/2 p-4">
+                <img src="Images/Samia_Mam.jpg" alt="Samia Muntaha" class="w-1/2 mx-auto">
+            </div>
+            <div class="w-full lg:w-1/2 p-4">
+                <h1 class="text-xl font-bold">Samia Muntaha</h1>
+                <p>Lecturer <br>
+                    Department of Computer Science and Engineering <br>
+                    Phone: +8801686490736 <br>
+                    Mail: muntaha.cse@ciu.edu.bd <br>
+                    Room-No: 2504
+                </p>
+            </div>
+        </section>
+
+        <!-- Faculty Member 3 -->
+        <section class="flex flex-wrap items-center bg-orange-200 p-4">
+            <div class="w-full lg:w-1/2 p-4">
+                <h1 class="text-xl font-bold">Dr. Assef Iqbal</h1>
+                <p>Professor, School of Science & Engineering(SSE) <br>
+                    Department of Computer Science and Engineering <br>
+                    Senior Member, IEEE Robotics and Automation Society <br>
+                    Phone: +880-622946, 636484 <br>
+                    Mail: aseef@ciu.edu.bd <br>
+                    Room-No: 2304
+                </p>
+            </div>
+            <div class="w-full lg:w-1/2 p-4">
+                <img src="Images/Aseef_Sir.jpg" alt="Dr. Assef Iqbal" class="w-1/2 mx-auto">
+            </div>
+        </section>
+
+        <!-- Faculty Member 4 -->
+        <section class="flex flex-wrap items-center bg-yellow-100 p-4">
+            <div class="w-full lg:w-1/2 p-4">
+                <img src="Images/Atiq_Sir.jpg" alt="Atiqur Rahman" class="w-1/2 mx-auto">
+            </div>
+            <div class="w-full lg:w-1/2 p-4">
+                <h1 class="text-xl font-bold">Atiqur Rahman</h1>
+                <p>Assistant Professor <br>
+                    Department of Computer Science and Engineering <br>
+                    Phone: +8801716936378 <br>
+                    Mail: arahman@ciu.edu.bd <br>
+                    Room-No: 2203
+                </p>
+            </div>
+        </section>
+
+            <!-- Faculty Member 5 -->
+        <section class="flex flex-wrap items-center bg-orange-200 p-4">
+            <div class="w-full lg:w-1/2 p-4">
+                <h1 class="text-xl font-bold">Md. Sajjatul Islam</h1>
+                <p>Assistant Professor <br>
+                    Department of Computer Science and Engineering <br>
+                    Phone: +8801872535949 <br>
+                    Mail: sajjatulislam@ciu.edu.bd <br>
+                    Room-No: 2506
+                </p>
+            </div>
+            <div class="w-full lg:w-1/2 p-4">
+                <img src="Images/Sajjat_Sir.jpg" alt="Md. Sajjatul Islam" class="w-1/2 mx-auto">
+            </div>
+        </section>
+
+        <!-- Faculty Member 6 -->
+        <section class="flex flex-wrap items-center bg-yellow-100 p-4">
+            <div class="w-full lg:w-1/2 p-4">
+                <img src="Images/Risul_Sir.jpg" alt="Risul Islam Rasel" class="w-1/2 mx-auto">
+            </div>
+            <div class="w-full lg:w-1/2 p-4">
+                <h1 class="text-xl font-bold">Risul Islam Rasel</h1>
+                <p>Assistant Professor and Head <br>
+                    Department of Computer Science and Engineering <br>
+                    Phone: +8801779022055 <br>
+                    Mail: risul@ciu.edu.bd <br>
+                    Room-No: 2204
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
